@@ -1,38 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Dog Heaven</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Dog Heaven</title>
 </head>
 <body>
-    <header>
-        <div id="header">     
-            <a href="#"><img src="./images/logo.jpg" alt="Dog Heaven Logo" class="logo"></a> 
-            <div id="social-icons">
-                <a href="#"><img src="./images/icons8-instagram-50.png" alt="insta" class="icon"></a>
-                <a href="#"><img src="./images/icons8-x-50.png" alt="x" class="icon"></a>
-                <a href="#"><img src="./images/icons8-tiktok-50.png" alt="tik tok" class="icon"></a>
-            </div>
-        </div>  
-    </header>
-    <main>
-        <div class="banner container">
-            <a href="#"><img src="./images/DOG HEAVEN.jpg" alt="banner" id="banner"></a>
-        </div>
-        <div class="">
-            
-        </div>
-        <div class="">
-            
-        </div>
-        <div class="">
-            
-        </div>
-    </main>
-    <footer>
+  <header>
+    <section id="header">
+      <a href="#"><img src="./images/logo.jpg" alt="Dog Heaven Logo" class="logo" /></a>
+      
+      <nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#staff">Staff</a></li>
+        </ul>
+      </nav>
 
-    </footer>
+      <div id="social-icons">
+        <a href="#"><img src="./images/icons8-instagram-50.png" alt="insta" class="icon" /></a>
+        <a href="#"><img src="./images/icons8-x-50.png" alt="x" class="icon" /></a>
+        <a href="#"><img src="./images/icons8-tiktok-50.png" alt="tik tok" class="icon" /></a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="banner-container">
+      <a href="#"><img src="./images/DOG_HEAVEN_NM.png" alt="name" class="title" /></a>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About Dog Heaven</h2>
+      <p>
+        At Dog Heaven, we believe every puppy deserves a second chance — not just to survive, but to thrive. 
+        We provide a safe, loving, and empowering environment where rescued dogs feel free, cared for, and in control of their own happiness. 
+        Our mission is to give these pups a true "safe-heaven" while we work to find them loving forever homes.
+      </p>
+      <img src="./images/puppy1.jpg" alt="happy puppy" class="puppy-img" />
+    </section>
+
+    <section class="services" id="services">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <h3>Adoption</h3>
+          <p>Meet our amazing dogs and find your perfect match.</p>
+        </div>
+        <div class="service-card">
+          <h3>Donate</h3>
+          <p>Support our mission by donating food or funds.</p>
+        </div>
+        <div class="service-card">
+          <h3>Volunteer</h3>
+          <p>Spend time with our dogs and help them feel loved.</p>
+        </div>
+      </div>
+      <img src="./images/puppy2.jpg" alt="volunteer with puppy" class="puppy-img" />
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <h2>What Our Supporters Say</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial">
+          <p>"Adopting Max from Dog Heaven was the best decision I ever made."</p>
+          <span>- Laura R.</span>
+        </div>
+        <div class="testimonial">
+          <p>"I donate every month because I trust Dog Heaven."</p>
+          <span>- Miguel S.</span>
+        </div>
+        <div class="testimonial">
+          <p>"Volunteering here is a highlight of my week."</p>
+          <span>- Karla G.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="staff" id="staff">
+      <h2>Meet Our Team</h2>
+      <div class="staff-cards">
+        <div class="staff-member">
+          <img src="./images/staff1.jpg" alt="Gabriela Diaz" />
+          <h3>Gabriela Diaz</h3>
+          <p>Founder & Head Dog Whisperer</p>
+        </div>
+        <div class="staff-member">
+          <img src="./images/staff2.jpg" alt="Emmanuel Rodriguez" />
+          <h3>Emmanuel Rodriguez</h3>
+          <p>Rescue & Outreach Coordinator</p>
+        </div>
+        <div class="staff-member">
+          <img src="./images/staff3.jpg" alt="Alejandra Diaz" />
+          <h3>Alejandra Diaz</h3>
+          <p>Adoption Specialist</p>
+        </div>
+      </div>
+      <img src="./images/puppy3.jpg" alt="dog heaven family" class="puppy-img" />
+    </section>
+  </main>
+
+  <footer>
+    <div class="sponsors">
+      <img src="./images/sponsor1.png" alt="Sponsor 1" />
+      <img src="./images/sponsor2.png" alt="Sponsor 2" />
+      <img src="./images/sponsor3.png" alt="Sponsor 3" />
+    </div>
+    <p>&copy; 2025 Dog Heaven. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
